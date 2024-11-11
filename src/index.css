@@ -1,0 +1,136 @@
+/* src/index.css */
+
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Reset and Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f8fc; /* Light mode background */
+  color: #333; /* Primary text color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark mode background */
+  color: #e0e0e0; /* Light text color for dark mode */
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Forms */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+input,
+textarea,
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #003366; /* Primary color focus */
+  box-shadow: 0 0 4px rgba(0, 51, 102, 0.2);
+}
+
+/* Dark Mode Overrides */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #2b2b2b;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+  border-color: #90caf9;
+  box-shadow: 0 0 4px rgba(144, 202, 249, 0.5);
+}
+
+/* Toast Notifications */
+.Toastify__toast-container {
+  font-family: 'Roboto', sans-serif;
+}
+
+.Toastify__toast--success {
+  background-color: #4caf50; /* Success color */
+  color: #ffffff;
+}
+
+.Toastify__toast--error {
+  background-color: #f44336; /* Error color */
+  color: #ffffff;
+}

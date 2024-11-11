@@ -1,0 +1,13 @@
+/* src/styles/Candidates.css */
+.candidates-container {
+    padding: 2rem;
+  }
+  
+  .candidate-item {
+    padding: 1rem;
+  }
+  
+  .candidate-item:hover {
+    background-color: #f0f0f0;
+  }
+  

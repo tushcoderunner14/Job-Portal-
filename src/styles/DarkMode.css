@@ -1,0 +1,19 @@
+/* src/styles/DarkMode.css */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .navbar {
+    background-color: #1d1d1d;
+  }
+  
+  .job-card {
+    background-color: #2c2c2c;
+    color: #ffffff;
+  }
+  
+  .job-card:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+  
